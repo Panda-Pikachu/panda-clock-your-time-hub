@@ -40,7 +40,7 @@ export const SettingsPanel = () => {
         variant="ghost"
         size="icon"
         onClick={toggleSettings}
-        className="fixed top-4 right-4 z-50 glass-panel w-12 h-12 rounded-full hover:scale-110 transition-smooth"
+        className="fixed top-4 right-8 z-50 glass-panel w-12 h-12 rounded-full hover:scale-110 transition-smooth"
       >
         <Settings className="w-5 h-5" />
       </Button>
