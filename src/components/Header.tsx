@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Maximize, Minimize } from 'lucide-react';
+import { Maximize, Minimize, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useClockStore } from '@/stores/clockStore';
 
 export const Header = () => {
-  const { isFullscreen, setFullscreen } = useClockStore();
+  const { isFullscreen, setFullscreen, toggleSettings } = useClockStore();
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
@@ -36,6 +36,14 @@ export const Header = () => {
         </motion.div>
 
         <div className="flex items-center gap-2">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleSettings}
+            className="glass-panel w-10 h-10 rounded-full"
+          >
+            <Settings className="w-4 h-4" />
+          </Button>
           <Button
             variant="ghost"
             size="icon"

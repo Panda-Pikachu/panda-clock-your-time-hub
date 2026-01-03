@@ -35,15 +35,6 @@ export const SettingsPanel = () => {
 
   return (
     <>
-      {/* Settings trigger button */}
-      <Button
-        variant="ghost"
-        size="icon"
-        onClick={toggleSettings}
-        className="fixed top-4 right-8 z-50 glass-panel w-12 h-12 rounded-full hover:scale-110 transition-smooth"
-      >
-        <Settings className="w-5 h-5" />
-      </Button>
 
       {/* Overlay */}
       <AnimatePresence>

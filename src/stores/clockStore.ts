@@ -63,6 +63,7 @@ const defaultSettings: ClockSettings = {
     { id: '1', name: 'New York', timezone: 'America/New_York' },
     { id: '2', name: 'London', timezone: 'Europe/London' },
     { id: '3', name: 'Tokyo', timezone: 'Asia/Tokyo' },
+    { id: '4', name: 'Sydney', timezone: 'Australia/Sydney' },
   ],
   showWorldClock: true,
   showTimer: true,
