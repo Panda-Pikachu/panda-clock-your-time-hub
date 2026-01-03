@@ -27,7 +27,7 @@ interface WeatherAlert {
   severity: 'warning' | 'danger';
 }
 
-// Tamil Nadu cities with coordinates
+// All Tamil Nadu district headquarters and major cities with coordinates
 const TN_CITIES = [
   { name: 'Chennai', lat: 13.0827, lon: 80.2707 },
   { name: 'Coimbatore', lat: 11.0168, lon: 76.9558 },
@@ -35,8 +35,45 @@ const TN_CITIES = [
   { name: 'Tiruchirappalli', lat: 10.7905, lon: 78.7047 },
   { name: 'Salem', lat: 11.6643, lon: 78.1460 },
   { name: 'Tirunelveli', lat: 8.7139, lon: 77.7567 },
+  { name: 'Erode', lat: 11.3410, lon: 77.7172 },
   { name: 'Vellore', lat: 12.9165, lon: 79.1325 },
+  { name: 'Thoothukudi', lat: 8.7642, lon: 78.1348 },
+  { name: 'Dindigul', lat: 10.3624, lon: 77.9695 },
   { name: 'Thanjavur', lat: 10.7870, lon: 79.1378 },
+  { name: 'Tiruppur', lat: 11.1085, lon: 77.3411 },
+  { name: 'Nagercoil', lat: 8.1833, lon: 77.4119 },
+  { name: 'Kanchipuram', lat: 12.8342, lon: 79.7036 },
+  { name: 'Karur', lat: 10.9601, lon: 78.0766 },
+  { name: 'Hosur', lat: 12.7409, lon: 77.8253 },
+  { name: 'Cuddalore', lat: 11.7480, lon: 79.7714 },
+  { name: 'Kumbakonam', lat: 10.9617, lon: 79.3881 },
+  { name: 'Rajapalayam', lat: 9.4525, lon: 77.5536 },
+  { name: 'Pudukkottai', lat: 10.3833, lon: 78.8001 },
+  { name: 'Sivakasi', lat: 9.4533, lon: 77.7994 },
+  { name: 'Nagapattinam', lat: 10.7672, lon: 79.8449 },
+  { name: 'Virudhunagar', lat: 9.5680, lon: 77.9624 },
+  { name: 'Pollachi', lat: 10.6609, lon: 77.0087 },
+  { name: 'Krishnagiri', lat: 12.5266, lon: 78.2141 },
+  { name: 'Ooty', lat: 11.4102, lon: 76.6950 },
+  { name: 'Kodaikanal', lat: 10.2381, lon: 77.4892 },
+  { name: 'Ariyalur', lat: 11.1400, lon: 79.0800 },
+  { name: 'Dharmapuri', lat: 12.1211, lon: 78.1582 },
+  { name: 'Kallakurichi', lat: 11.7400, lon: 78.9600 },
+  { name: 'Mayiladuthurai', lat: 11.1000, lon: 79.6500 },
+  { name: 'Namakkal', lat: 11.2189, lon: 78.1674 },
+  { name: 'Perambalur', lat: 11.2320, lon: 78.8800 },
+  { name: 'Ramanathapuram', lat: 9.3639, lon: 78.8395 },
+  { name: 'Ranipet', lat: 12.9320, lon: 79.3330 },
+  { name: 'Sivaganga', lat: 9.8433, lon: 78.4809 },
+  { name: 'Tenkasi', lat: 8.9604, lon: 77.3152 },
+  { name: 'Theni', lat: 10.0104, lon: 77.4768 },
+  { name: 'Thiruvannamalai', lat: 12.2253, lon: 79.0747 },
+  { name: 'Thiruvarur', lat: 10.7725, lon: 79.6370 },
+  { name: 'Tiruvallur', lat: 13.1231, lon: 79.9120 },
+  { name: 'Villupuram', lat: 11.9401, lon: 79.4861 },
+  { name: 'Chengalpattu', lat: 12.6819, lon: 79.9888 },
+  { name: 'Tirupattur', lat: 12.4955, lon: 78.5730 },
+  { name: 'Kanyakumari', lat: 8.0883, lon: 77.5385 },
 ];
 
 const getWeatherIcon = (code: number, size: string = "w-10 h-10") => {
