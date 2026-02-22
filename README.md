@@ -3,7 +3,7 @@
 A lovable, modern web project built with **React**, **Vite**, **TypeScript**, **Tailwind CSS** and **shadcn-ui**.  
 This project is a starting template you can use to build beautiful, responsive interfaces quickly.
 
-Please visit https://pandatime.netlify.app/ (or) https://pandatime.lovable.app/ for better experience 
+Please visit https://pandatime.netlify.app for better experience 
 ---
 
 ## 🚀 Features
